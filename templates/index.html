@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Dashboard</title>
+    <style>
+        body {
+	    font-family: Arial;
+	    background-color: #1a1a2e;
+	    color: white;
+	    text-align: center;
+	    padding: 50px;
+	}
+	h1 { color: #00d4ff;  }
+	.card {
+	    display: inline-block;
+	    backgroung-color: #16213e;
+	    border-radius: 10px;
+	    padding: 30px;
+	    margin: 20px;
+	    width: 200px;
+	}
+	.number {
+  	    font-size: 48px;
+	    color: #00d4ff;
+	    font-weight: bold;
+	}
+	.label {
+ 	    font-size: 18px;
+	    color: #888;
+	}
+    </style>
+</head>
+<body>
+    <h1>DevOps Monitoring Dashboard</h1>
+    <p>Kubernetes pe chal raha hai</p>
+
+    <div class="card">
+	<div class="number">{{ cpu }}%</div>
+	<div class="label">CPU Usage</div>
+    </div>
+
+    <div class="card">
+	<div class="number">{{ ram }}%</div>
+	<div class="label">RAM Usage</div>
+    </div>
+
+    <div class="card">
+    	<div class="number">{{ disk }}%</div>
+	<div class="label">Disk Usage</div>
+    </div>
+   
+    <p>Made by Disha Lahoti | DevOps Engineer</p>
+</body>
+</html>
