@@ -14,6 +14,7 @@ Real-time system monitoring dashboard deployed on Kubernetes with 2 replicas.
 
 ## How to Run
 kubectl apply -f deployment.yaml
+
 kubectl apply -f service.yaml
 minikube service flask-service
 
